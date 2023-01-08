@@ -16,17 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCa-Ui-0rx">
-                                <rect key="frame" x="69" y="409" width="255" height="35"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tCa-Ui-0rx">
+                                <rect key="frame" x="131" y="410" width="132.33333333333334" height="34.333333333333336"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="tCa-Ui-0rx" secondAttribute="height" multiplier="66:17" id="4CR-Bv-Tum"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Rxn-LB-4BX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="Upm-ol-qjG"/>
                                     <constraint firstAttribute="height" constant="300" id="W4g-01-8rU"/>
                                     <constraint firstAttribute="width" constant="300" id="xod-BN-Hgh"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <size key="titleShadowOffset" width="6" height="6"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Authorized"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Authorized" titleAlignment="automatic"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

@@ -24,14 +24,16 @@ class PermissionHealthKitSetup{
             return
         }
         
-        guard let dateOfBirth = HKObjectType.characteristicType(forIdentifier: .dateOfBirth),
+        guard /*let dateOfBirth = HKObjectType.characteristicType(forIdentifier: .dateOfBirth),
         let bloodType = HKObjectType.characteristicType(forIdentifier: .bloodType),
-        let biologicalSex = HKObjectType.characteristicType(forIdentifier: .biologicalSex)
+        let biologicalSex = HKObjectType.characteristicType(forIdentifier: .biologicalSex),*/
+        let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis)
+        
         else {
             completion(false,permissionHealthKitError.dataNotAvaliable)
             return
         }
-        let hKHealthKitToReadDataType : Set<HKObjectType> = [dateOfBirth, bloodType, biologicalSex]
+        let hKHealthKitToReadDataType : Set<HKObjectType> = [/*dateOfBirth, bloodType, biologicalSex, */sleepType]
         HKHealthStore().requestAuthorization(toShare: nil, read: hKHealthKitToReadDataType) { success, error in
             completion(success,error)
         }

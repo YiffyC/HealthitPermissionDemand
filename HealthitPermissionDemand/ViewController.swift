@@ -28,6 +28,7 @@ class ViewController: UIViewController {
                 return
             }
             print("Healthit authorized")
+            self.authorizedButton.backgroundColor = .green
         }
     }
     

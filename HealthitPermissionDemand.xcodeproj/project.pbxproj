@@ -16,6 +16,7 @@
 		922236D2296B6E8400C3DF38 /* HealthitPermissionDemandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922236D1296B6E8400C3DF38 /* HealthitPermissionDemandTests.swift */; };
 		922236DC296B6E8400C3DF38 /* HealthitPermissionDemandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922236DB296B6E8400C3DF38 /* HealthitPermissionDemandUITests.swift */; };
 		922236DE296B6E8400C3DF38 /* HealthitPermissionDemandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922236DD296B6E8400C3DF38 /* HealthitPermissionDemandUITestsLaunchTests.swift */; };
+		922236EC296B6F8700C3DF38 /* PermissionHealthKitSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922236EB296B6F8700C3DF38 /* PermissionHealthKitSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		922236D7296B6E8400C3DF38 /* HealthitPermissionDemandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthitPermissionDemandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		922236DB296B6E8400C3DF38 /* HealthitPermissionDemandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthitPermissionDemandUITests.swift; sourceTree = "<group>"; };
 		922236DD296B6E8400C3DF38 /* HealthitPermissionDemandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthitPermissionDemandUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		922236EA296B6EB100C3DF38 /* HealthitPermissionDemand.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthitPermissionDemand.entitlements; sourceTree = "<group>"; };
+		922236EB296B6F8700C3DF38 /* PermissionHealthKitSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionHealthKitSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		922236B9296B6E8200C3DF38 /* HealthitPermissionDemand */ = {
 			isa = PBXGroup;
 			children = (
+				922236EA296B6EB100C3DF38 /* HealthitPermissionDemand.entitlements */,
 				922236BA296B6E8200C3DF38 /* AppDelegate.swift */,
 				922236BC296B6E8200C3DF38 /* SceneDelegate.swift */,
 				922236BE296B6E8200C3DF38 /* ViewController.swift */,
@@ -106,6 +110,7 @@
 				922236C3296B6E8400C3DF38 /* Assets.xcassets */,
 				922236C5296B6E8400C3DF38 /* LaunchScreen.storyboard */,
 				922236C8296B6E8400C3DF38 /* Info.plist */,
+				922236EB296B6F8700C3DF38 /* PermissionHealthKitSetup.swift */,
 			);
 			path = HealthitPermissionDemand;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				922236BF296B6E8200C3DF38 /* ViewController.swift in Sources */,
+				922236EC296B6F8700C3DF38 /* PermissionHealthKitSetup.swift in Sources */,
 				922236BB296B6E8200C3DF38 /* AppDelegate.swift in Sources */,
 				922236BD296B6E8200C3DF38 /* SceneDelegate.swift in Sources */,
 			);
@@ -435,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthitPermissionDemand/HealthitPermissionDemand.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KCPG52YBJB;
@@ -463,6 +470,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthitPermissionDemand/HealthitPermissionDemand.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KCPG52YBJB;
